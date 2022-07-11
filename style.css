@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+    align-items:center;
+}
+.logo a {
+    text-decoration: none;
+    color: #000;
+}
+.navbar {
+    width: 100%;
+    
+}
+.navbar-light .navbar-toggler {
+    border: none;
+}
+.principal {
+    height: 95vh;
+    background: url(https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 4px 4px 4px black;
+}
+.principal a {
+    text-decoration: none;
+    background: white;
+    width: 40%;
+    height: 4rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow: none;
+    color: #000;
+}
+.principal button:hover {
+    box-shadow: 1px 1px 26px 9px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 1px 1px 26px 9px rgba(0,0,0,0.5);
+    -moz-box-shadow: 1px 1px 26px 9px rgba(0,0,0,0.5);
+}
+
+/* banner */
+
+.banner {
+    background: linear-gradient(to right, #000, #738290);
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* proyectos */
+
+.proyectos table{
+    border: 3px solid black;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border-spacing: 5px;
+    border-collapse: separate;
+    text-align: center;
+}
+.proyectos table th {
+    border: 3px solid black;
+}
+.proyectos table td {
+    padding: 10px;
+    border: 3px solid black;
+}
+.proyectos a {
+    text-decoration: none;
+    color: #000;
+
+}
+.par {
+    color: red;
+    background: rgba(0,0,0,0.7);
+}
+.impar {
+    color: blue;
+    background: rgba(0,0,0,0.5);
+}
+@media only screen and (min-width: 1024px) {
+    header {
+        flex-direction: row;
+    }
+    .logo {
+        width: 40%;
+    }
+    .menu {
+        width: 25%;
+        justify-content: flex-end;
+    }
+    .principal a {
+        width: 15%;
+    }
+}
